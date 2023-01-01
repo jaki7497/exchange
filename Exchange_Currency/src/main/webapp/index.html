@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="exchange_box">
+		<div class="dropdown">
+			<button class="dropbtn" id="from_btn">USD</button>
+			<div class="dropdown-content" id="from_currency_list">
+				<a href="#">USD</a>
+				<a href="#">KRW</a>
+				<a href="#">VND</a>
+			</div>
+		</div>
+		<div class="number_box">
+			<input type="number" id="from_input" onkeyup="convert()"/>
+			<div id="from_unit">달러</div>
+		</div>
+	</div>
+	<h1>=</h1>
+	<div class="exchange_box">
+		<div class="dropdown">
+			<button class="dropbtn" id="to_btn">USD</button>
+			<div class="dropdown-content" id="to_currency_list">
+				<a href="#">USD</a>
+				<a href="#">KRW</a>
+				<a href="#">VND</a>
+			</div>
+		</div>
+		<div class="number_box">
+			<input type="number" id="to_input" onkeyup="re_convert()"/>
+			<div id="to_unit">달러</div>
+		</div>
+	</div>	
+	<script src="main.js"></script>
+</body>
+</html>
